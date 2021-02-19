@@ -62,3 +62,20 @@ nav {
     margin-left: 15rem;
   }
 }
+
+/* Card component styles */
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  min-height: 70px;
+  padding: 0 2.25rem;
+  background-color: transparent;
+}
+.card-toolbar{
+  display: flex;
+  align-items: center;
+  margin: .5rem 0;
+  flex-wrap: wrap;
+}
