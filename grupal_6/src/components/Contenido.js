@@ -5,6 +5,7 @@ import graficos1 from '../img/graficos1.jpg';
 import graficos2 from '../img/graficos2.jpg';
 import Container from 'react-bootstrap/Container'
 
+import Card from './Card'
 
 export default function Contenido() {
     return (
