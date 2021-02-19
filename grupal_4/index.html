@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luteach</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -104,11 +104,148 @@
 
             <div class="row row-cols-1">
                 <div class="card border-secondary mb-3 ml-3 mr-3" style="max-width: 20rem;">
-                    <div class="card-header">Cursos Top Vendidos</div>
-                    <div class="card-body text-secondary">
-                        <h5 class="card-title">Curso</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-header border-0 pt-3">
+                        <h3 class="d-flex card-title align-items-start flex-column">
+                            <span class="card-label fw-bolder">Cursos Vendidos</span>
+                            <span># ventas</span>
+                        </h3>
+                        <div class="card-toolbar">
+                            <ul class="nav nav-pills nav-pills-sm" role="tablist">
+                                <li class="nav-item">
+                                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dia" role="tab">Dia</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#mes" role="tab">Mes</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ciclo" role="tab">Ciclo</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="dia" role="tabpanel">
+                                <div class="table-responsive-md">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="mes" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ciclo" role="tabpanel">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -140,8 +277,7 @@
 
     </div>
 
-    <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>
