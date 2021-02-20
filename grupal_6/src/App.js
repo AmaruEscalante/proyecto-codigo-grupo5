@@ -19,7 +19,6 @@ function App() {
         <Col xs={10}>
         <Contenido></Contenido>
         <Card/>
-
         </Col>
       </div>
     </div>
