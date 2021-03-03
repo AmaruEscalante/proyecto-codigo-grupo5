@@ -1,4 +1,4 @@
-import style from '../styles/styles.css';
+import '../styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
@@ -15,15 +15,15 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a className="nav-link dropdown-toggle" href={'#'} id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Usuario
                             </a>
                             <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="#">Configurar</a>
-                                <a className="dropdown-item" href="#">Mi Perfil</a>
+                                <a className="dropdown-item" href={'#'}>Configurar</a>
+                                <a className="dropdown-item" href={'#'}>Mi Perfil</a>
                                 <div className="dropdown-divider"></div>
-                                <a className="dropdown-item" href="#">Cerrar Sesión</a>
+                                <a className="dropdown-item" href={'#'}>Cerrar Sesión</a>
                             </div>
                         </li>
                     </ul>

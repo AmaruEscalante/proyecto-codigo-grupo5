@@ -1,4 +1,4 @@
-import style from '../styles/styles.css';
+import '../styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Card(){

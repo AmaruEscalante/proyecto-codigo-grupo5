@@ -1,4 +1,4 @@
-import style from '../styles/styles.css';
+import '../styles/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import graficos from '../img/graficos.jpg';
 import graficos1 from '../img/graficos1.jpg';
