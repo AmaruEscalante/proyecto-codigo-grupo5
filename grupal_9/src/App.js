@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Fragment } from 'react';
 
 import Layout from './components/Layout';
+import Home from './pages/Home';
 
 export default function App () {
   return( 
@@ -9,7 +10,7 @@ export default function App () {
           <BrowserRouter>
               <Layout>
                   <Switch>
-                      <Route path="/"/>
+                      <Route path="/" component={Home} />
                   </Switch>
               </Layout>
           </BrowserRouter>
