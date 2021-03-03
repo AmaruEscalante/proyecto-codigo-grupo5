@@ -1,6 +1,3 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.js'
 import '../assets/sidebar.css'
 
 export default function Sidebar() {

@@ -1,6 +1,3 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.js'
 import Content from '../components/Content'
 import $ from 'jquery'
 import '../assets/sidebar.css'
@@ -40,7 +37,7 @@ export default function Navbar() {
             </ul>
           </div>
         </nav>
-        <Content></Content>
+        {/* <Content></Content> */}
       </div>
     )
 }

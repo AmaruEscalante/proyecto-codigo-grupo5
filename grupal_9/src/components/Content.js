@@ -1,12 +1,12 @@
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.js'
+import { Fragment } from 'react';
 import '../assets/sidebar.css'
+import Navbar from './Navbar';
 import { Bar, Line, Radar } from 'react-chartjs-2'
 
 export default function Content() {
     return (
         <div>
+            <Navbar/>
             {/* Aquí va el contenido general */}
             <div className="container-fluid" id="contenido">
                 <h1 className="mt-4">Estadísticas por Universidad</h1>
