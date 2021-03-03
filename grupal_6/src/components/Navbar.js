@@ -1,5 +1,4 @@
 import style from '../styles/styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Navbar() {
     return (
@@ -13,6 +12,10 @@ export default function Navbar() {
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form className="d-flex ml-auto mt-2 mt-md-0 mb-0">
+                        <input className="form-control ml-2" type="search" placeholder="Search" aria-label="Search"></input>
+                        <button className="btn btn-outline-primary" type="submit">Buscar</button>
+                    </form>
                     <ul className="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

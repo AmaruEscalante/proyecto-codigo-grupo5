@@ -1,16 +1,12 @@
 import style from '../styles/styles.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import graficos from '../img/graficos.jpg';
 import graficos1 from '../img/graficos1.jpg';
 import graficos2 from '../img/graficos2.jpg';
-import Container from 'react-bootstrap/Container'
-
 import Card from './Card'
 
 export default function Contenido() {
     return (
-        <Container fluid>
-
+        <div className="container-fluid">
             <h1 className="mt-4">Estadísticas por Universidad</h1>
             {/* Botones */}
             <div className="btn-group" role="group" aria-label="Basic outlined example">
@@ -71,6 +67,6 @@ export default function Contenido() {
                     </div>
                 </div>
             </div>
-        </Container>
+        </div>
     )
 }
