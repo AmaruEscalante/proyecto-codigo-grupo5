@@ -1,0 +1,7 @@
+.custom-navbar{
+    width: calc(100vw - 240px) !important;
+}
+
+.toggle-navbar{
+    width: 100vw !important;
+}

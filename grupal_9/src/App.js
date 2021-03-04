@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import Stats from './pages/Stats';
 
 export default function App () {
   return( 
@@ -10,7 +11,8 @@ export default function App () {
           <BrowserRouter>
               <Layout>
                   <Switch>
-                      <Route path="/" component={Home} />
+                      <Route exact path="/" component={Home} />
+                      <Route exact path="/stats" component={Stats} />
                   </Switch>
               </Layout>
           </BrowserRouter>

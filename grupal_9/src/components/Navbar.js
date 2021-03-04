@@ -1,15 +1,16 @@
-import Content from '../components/Content'
-import $ from 'jquery'
-import '../assets/sidebar.css'
+import $ from 'jquery';
+import '../assets/sidebar.css';
+import '../assets/navbar.css';
 
 export default function Navbar() {
     return (
-        <div id="page-content-wrapper">
+        <div className="custom-navbar" id="page-content-wrapper">
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light border-bottom">
           <button className="btn btn-primary toggle" id="menu-toggle" onClick={function(e){
               e.preventDefault();
               $("#wrapper").toggleClass("toggled");
+              $("#page-content-wrapper").toggleClass("toggle-navbar");
           }}>Mostrar Menú</button>
   
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
