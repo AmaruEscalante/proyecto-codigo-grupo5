@@ -55,3 +55,10 @@ margin-left: -15rem;
 .barra {
 height: 250px !important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.logo{
+    font-family: 'Bungee', cursive;
+    color: #ff914d;
+}
