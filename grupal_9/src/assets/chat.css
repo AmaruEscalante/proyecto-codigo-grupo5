@@ -1,0 +1,13 @@
+.chat {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.container {
+    width: 80%;
+    border: 1px solid blue;
+    padding: 20px;
+    justify-self: baseline;
+}
