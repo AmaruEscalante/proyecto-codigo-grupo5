@@ -12,43 +12,78 @@
     width: 80%;
     border-radius: 10px;
     background-color: #F3F3F3;
-    padding: 20px;
-}
-
-.box {
-    width: auto;
-    background-color: white;
-    margin: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.alumno {
-    background-color: #ABFFB0;
-    align-self: flex-end;
-    text-align: right;
-    padding: 20px;
-    padding-bottom: 2px;
-    
-}
-
-
-.profesor {
-    background-color: #D3FFF5;
-    align-self: flex-start;
-    padding: 20px;
-    padding-bottom: 2px;
-}
-
-.imagen:nth-child(n) {
-    width: 70px;
-    background-color: red;
     padding: 10px;
-    border-radius: 99px;
-    align-self: flex-start;
-    z-index: 1;
-    margin-bottom: 20px;
 }
+
+/* Cambios */
+
+.card {
+    width: 80%;
+    margin: 8px;
+}
+
+.card-body {
+    padding: 10px;
+    margin: 0;
+} 
+
+.card-body img{
+    width: 40px;
+    border-radius: 100%;
+    padding: 3px;
+    background-color: white;
+    border: 3px solid #FDBF59;
+}
+
+.card-body p {
+    font-size: 15px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.card-title h5 {
+    color: #A7A7A7;
+    font-size: 15px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+
+.student {
+    align-self: flex-end;
+    background-color: #D3FFF5;
+}
+
+.teacher {
+    background-color: #DAF7A6;
+}
+
+
+
+.form-inline:last-child {
+    background-color: wheat;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.form {
+    width: 88% !important;
+}
+
+.form-inline:last-child .btn {
+    width: 10%;
+    background-color: #6EFF2A;
+}
+
+.form-inline:last-child img {
+    width: 20px;
+}
+
