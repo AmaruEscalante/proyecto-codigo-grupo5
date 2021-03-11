@@ -10,7 +10,7 @@ export default function Sidebar() {
                     <Link to="/" className="list-group-item list-group-item-action bg-light" data-toggle="list">Inicio</Link>
                     <Link to="/stats" className="list-group-item list-group-item-action bg-light" data-toggle="list">Estadísticas</Link>
                     <Link to="/chat" className="list-group-item list-group-item-action bg-light" data-toggle="list">Clientes</Link>
-                    <a href="#" className="list-group-item list-group-item-action bg-light" data-toggle="list">Luteachers</a>
+                    <Link to="/luteachers" className="list-group-item list-group-item-action bg-light" data-toggle="list">Luteachers</Link>
                 </div>
             </div>
         </div>
