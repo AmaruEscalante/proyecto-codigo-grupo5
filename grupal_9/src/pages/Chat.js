@@ -9,9 +9,9 @@ export default function Chat() {
         <div className="chat">
             <div className="container">
 
-                <div class="card teacher">
-                    <div class="card-body">
-                        <div className="card-title">
+                <div id="card" className="teacher">
+                    <div id="card-body">
+                        <div id="card-title">
                             <img src={Profesor} class="card-img-top" alt="..."></img>
                             <h5>Luis</h5>
                         </div>
@@ -20,9 +20,9 @@ export default function Chat() {
                     </div>
                 </div>
 
-                <div class="card student">
-                    <div class="card-body">
-                        <div className="card-title">
+                <div id="card" className="student">
+                    <div id="card-body">
+                        <div id="card-title">
                             <img src={Alumno} class="card-img-top" alt="..."></img>
                             <h5>User</h5>
                         </div>
@@ -30,9 +30,9 @@ export default function Chat() {
                     </div>
                 </div>
 
-                <div class="card student">
-                    <div class="card-body">
-                        <div className="card-title">
+                <div id="card" className="student">
+                    <div id="card-body">
+                        <div id="card-title">
                             <img src={Alumno} class="card-img-top" alt="..."></img>
                             <h5>User</h5>
                         </div>
@@ -41,7 +41,7 @@ export default function Chat() {
                 </div>
 
             <form class="form-inline">
-                <input class="form-control mr-sm-2 form" type="search" placeholder="Escribe tu mensaje" aria-label="Search"></input>
+                <input class="form-control mr-sm-2 form" id="message" type="search" placeholder="Escribe tu mensaje" aria-label="Search"></input>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                     <img src={Clip}></img>
                 </button>

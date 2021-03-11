@@ -15,19 +15,17 @@
     padding: 10px;
 }
 
-/* Cambios */
-
-.card {
+#card {
     width: 80%;
     margin: 8px;
 }
 
-.card-body {
+#card-body {
     padding: 10px;
     margin: 0;
 } 
 
-.card-body img{
+#card-body img{
     width: 40px;
     border-radius: 100%;
     padding: 3px;
@@ -35,11 +33,11 @@
     border: 3px solid #FDBF59;
 }
 
-.card-body p {
+#card-body p {
     font-size: 15px;
 }
 
-.card-title {
+#card-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +46,7 @@
     border-radius: 10px;
 }
 
-.card-title h5 {
+#card-title h5 {
     color: #A7A7A7;
     font-size: 15px;
     padding-right: 10px;
@@ -74,8 +72,8 @@
     justify-content: space-between;
 }
 
-.form {
-    width: 88% !important;
+#message {
+    width: 88%;
 }
 
 .form-inline:last-child .btn {
