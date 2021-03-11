@@ -18,7 +18,7 @@ export default function Luteachers() {
 
                                 <Bar
                                     data={{
-                                        labels: ['UTP', 'U.Lima', 'Pacífico', 'Cayetano H.', 'U. Católica', 'U. Piura',],
+                                        labels: ['Leteacher 1', 'Leteacher 2', 'Leteacher 3', 'Leteacher 4', 'Leteacher 5', 'Leteacher 6',],
                                         datasets: [{
                                             label: 'Cantidad de inscritos',
                                             data: [7, 12, 13, 9, 17, 3],
