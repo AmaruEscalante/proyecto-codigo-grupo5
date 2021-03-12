@@ -11,7 +11,6 @@ export default function Sidebar() {
                     <Link to="/stats" className="list-group-item list-group-item-action bg-light">Estadísticas</Link>
                     <a href="#" className="list-group-item list-group-item-action bg-light">Clientes</a>
                     <a href="#" className="list-group-item list-group-item-action bg-light">Luteachers</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Postulantes</a>
                 </div>
             </div>
         </div>
