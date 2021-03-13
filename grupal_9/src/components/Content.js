@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 export default function Content(props) {
     return (
         <div>
-            <Navbar/>
+            <Navbar handleLogout={props.handleLogout}/>
             {props.children}
             {/* Aquí va el contenido general */}
             

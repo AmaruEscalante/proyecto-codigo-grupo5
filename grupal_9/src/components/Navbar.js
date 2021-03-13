@@ -2,7 +2,9 @@ import $ from 'jquery';
 import '../assets/sidebar.css';
 import '../assets/navbar.css';
 
-export default function Navbar() {
+export default function Navbar({handleLogout}) {
+
+
     return (
         <div className="custom-navbar" id="page-content-wrapper">
 
@@ -32,7 +34,7 @@ export default function Navbar() {
                   <a className="dropdown-item" href="#">Perfil</a>
                   <a className="dropdown-item" href="#">Configuración</a>
                   <div className="dropdown-divider"></div>
-                  <a className="dropdown-item" href="#">Cerrar Sesión</a>
+                  <a className="dropdown-item" onClick={handleLogout} href="#">Cerrar Sesión</a>
                 </div>
               </li>
             </ul>
