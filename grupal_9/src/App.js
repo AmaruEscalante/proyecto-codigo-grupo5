@@ -6,7 +6,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home'
 import Stats from './pages/Stats';
 import Login from './pages/Login';
-import Chat from './pages/Chat';
+// import Chat from './pages/Chat';
 import Chatroom from './pages/Chatroom'
 import Luteachers from './pages/Luteachers'
 
@@ -44,11 +44,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header>
-        <h1>⚛️🔥💬</h1>
-        <SignOut />
-      </header> */}
-
       <section>
         {user ? (
 
@@ -67,7 +62,6 @@ function App() {
 
         ) : <SignIn />}
       </section>
-
     </div>
   );
 }
