@@ -1,5 +1,6 @@
 import React, { Fragment, useRef, useState } from 'react';
 import { auth, firestore, analytics } from '../App';
+import './styles/Chatroom.css'
 
 // import './App.css';
 // import Layout from './components/Layout'
@@ -52,7 +53,7 @@ function ChatRoom() {
   }
 
   return (<>
-    <main>
+    <main className="containerChat">
 
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
 
@@ -62,11 +63,12 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Escribe tu mensaje" />
 
-      <button type="submit" disabled={!formValue}>ðŸ•Šï¸</button>
+      <button type="submit" disabled={!formValue}>Enviar</button>
 
     </form>
+    
   </>)
 }
 
