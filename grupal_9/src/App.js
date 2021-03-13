@@ -6,7 +6,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home'
 import Stats from './pages/Stats';
 import Login from './pages/Login';
-import Chat from './pages/Chat'
+import Chat from './pages/Chat';
+import Chatroom from './pages/Chatroom'
 import Luteachers from './pages/Luteachers'
 
 import firebase from 'firebase/app';
@@ -34,6 +35,8 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
+export { auth, firestore, analytics }
+
 
 function App() {
 
@@ -41,21 +44,21 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <h1>⚛️🔥💬</h1>
         <SignOut />
-      </header>
+      </header> */}
 
       <section>
         {user ? (
 
           <Fragment>
             <BrowserRouter>
-              <Layout>
+              <Layout handleLogout={handleLogout}>
                 <Switch>
                     <Route path="/home" component={Home} />
                     <Route path="/stats" component={Stats} />
-                    <Route path="/chat" component={Chat} />
+                    <Route path="/chat" component={Chatroom} />
                     <Route path="/luteachers" component={Luteachers} />
                   </Switch>
                 </Layout>
@@ -90,6 +93,8 @@ function SignOut() {
     <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   )
 }
+
+const handleLogout = () => auth.signOut();
 
 
 function ChatRoom() {
