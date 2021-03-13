@@ -1,7 +1,20 @@
-import { Fragment } from 'react';
+import axios from 'axios';
+import { Fragment, useState, useEffect } from 'react';
 import './Card.css';
 
 export default function Card(){
+    const url = 'https://603c3566f4333a0017b6742d.mockapi.io/admin/v0/';
+    const [courses, setCourses] = useState([]);
+
+    useEffect(() => {
+        axios.get(`${url}sold_courses`)
+        .then((res) => {
+            const sold_courses = res.data;
+            setCourses(sold_courses)
+        })
+    }, []);
+    
+
     return(<Fragment>
         <div className="col-xl-4">
             <div className="card card-custom mt-4 mb-3">
@@ -40,30 +53,16 @@ export default function Card(){
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th>Mate 1</th>
-                                        <td>10</td>
-                                        <td>5</td>
-                                        <td>S/.1200</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Quimica</th>
-                                        <td>10</td>
-                                        <td>5</td>
-                                        <td>S/.1200</td>
-                                    </tr>
-                                    <tr>
-                                        <th>ICC</th>
-                                        <td>10</td>
-                                        <td>5</td>
-                                        <td>S/.1200</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Fisica 1</th>
-                                        <td>10</td>
-                                        <td>5</td>
-                                        <td>S/.1200</td>
-                                    </tr>
+                                    {courses.map((item) => {
+                                        return(
+                                            <tr>
+                                            <th>{item.name}</th>
+                                            <td>{item.individual}</td>
+                                            <td>{item.group}</td>
+                                            <td>S/.{item.revenue}</td>
+                                            </tr>
+                                        )
+                                    })}
                                 </tbody>
                             </table>
                         </div>
