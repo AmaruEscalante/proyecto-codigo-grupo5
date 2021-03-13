@@ -1,0 +1,61 @@
+.containerChat {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #FF914D;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+.containerChat img {
+  border-radius: 99px;
+  width: 40px;
+
+}
+
+.containerChat p {
+  font-size: 15px;
+  float: right;
+  padding-right: 30px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.message.sent {
+  border-radius: 10px;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: -10px;
+  padding-left: 10px;
+  width: 80%;
+  background-color: wheat;
+  align-self: flex-end;
+  height: 60px;
+}
+
+.message.received {
+  border-radius: 10px;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: -10px;
+  padding-left: 10px;
+  background-color: wheat;
+  width: 80%;
+  align-self: flex-start;
+  height: 60px;
+}
+
+form {
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: antiquewhite;
+}
