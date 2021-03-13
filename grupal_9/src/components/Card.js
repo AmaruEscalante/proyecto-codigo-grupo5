@@ -3,20 +3,28 @@ import { Fragment } from 'react';
 export default function Card(){
     return(<Fragment>
         <div className="card card-custom mt-4 mb-3">
-        <div className="card-header border-0 pt-3">
-            <h3 className="d-flex card-title align-items-start flex-column">
+        <div className="d-flex card-header border-0 pt-3 justify-content-between">
+            <h3 className="d-inline-flex card-title align-items-start flex-column">
                 <span className="card-label fw-bolder">Cursos Vendidos</span>
                 <span># ventas</span>
             </h3>
-            <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-secondary">Left</button>
-                <button type="button" className="btn btn-secondary">Middle</button>
-                <button type="button" className="btn btn-secondary">Right</button>
+            <div className="d-inline-flex card-toolbar">
+                <ul className="nav nav-pills nav-pills-sm" id="pills-tab" role="tablist">
+                    <li className="nav-item custom-nav" role="presentation">
+                        <a className="nav-link btn btn-active-light btn-color-muted py-2 px-4 fw-bolder me-2 active"  data-toggle="pill" href="#dia" role="tab">Dia</a>
+                    </li>
+                    <li className="nav-item custom-nav" role="presentation">
+                        <a className="nav-link btn btn-color-muted py-2 px-4 fw-bolder me-2" data-toggle="pill" href="#mes" role="tab">Mes</a>
+                    </li>
+                    <li className="nav-item custom-nav" role="presentation">
+                        <a className="nav-link btn btn-color-muted py-2 px-4 fw-bolder me-2" data-toggle="pill" href="#ciclo" role="tab">Ciclo</a>
+                    </li>
+                </ul>
             </div>
 
         </div>
         <div className="card-body">
-            <div className="tab-content">
+            <div className="tab-content" id="pills-tabContent">
                 <div className="tab-pane fade show active" id="dia" role="tabpanel">
                     <div className="table-responsive-md">
                         <table className="table">

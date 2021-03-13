@@ -1,10 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-.login-page {
-  width: 360px;
+.login_page {
+  width: 100vw;
   padding: 8% 0 0;
   margin: auto;
   align-items: center;
+  background: rgb(255,91,122);
+  background: linear-gradient(90deg, rgba(255,91,122,1) 0%, rgba(255,131,6,1) 100%);
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 .form {
@@ -86,10 +90,4 @@
 }
 .container .info span .fa {
   color: #EF3B3A;
-}
-
-body {
-background: rgb(255,162,0);
-background: linear-gradient(90deg, rgba(255,162,0,1) 0%, rgba(255,255,255,1) 51%, rgba(171,171,171,1) 100%);
-  font-family: "Roboto", sans-serif;
 }
