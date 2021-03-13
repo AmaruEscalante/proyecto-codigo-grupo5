@@ -1,7 +1,13 @@
-import React, { useRef, useState } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { Fragment, useRef, useState } from 'react';
 // import './App.css';
 // import Layout from './components/Layout'
+import Layout from './components/Layout';
 import Home from './pages/Home'
+import Stats from './pages/Stats';
+import Login from './pages/Login';
+import Chat from './pages/Chat'
+import Luteachers from './pages/Luteachers'
 
 import firebase from 'firebase/app';
 import 'firebase/firestore';
@@ -10,7 +16,6 @@ import 'firebase/analytics';
 
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import Layout from './components/Layout';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAte90LSKB44SalIPoYsEr8ryc2D2Ro5q8",
@@ -42,7 +47,22 @@ function App() {
       </header>
 
       <section>
-        {user ? <()/> : <SignIn />}
+        {user ? (
+
+          <Fragment>
+            <BrowserRouter>
+              <Layout>
+                <Switch>
+                    <Route path="/home" component={Home} />
+                    <Route path="/stats" component={Stats} />
+                    <Route path="/chat" component={Chat} />
+                    <Route path="/luteachers" component={Luteachers} />
+                  </Switch>
+                </Layout>
+            </BrowserRouter>
+          </Fragment>
+
+        ) : <SignIn />}
       </section>
 
     </div>
